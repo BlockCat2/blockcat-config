@@ -1,0 +1,19 @@
+#!/bin/zsh
+# coverart
+
+DEFAULT_COVER="/path/cover.png"
+
+MFILE=`mpc current -f %file%`
+MFILE=${MFILE%/*}
+
+FULLDIR="/home/emperor/Music/$MFILE"
+
+COVERS=`ls $FULLDIR | grep  "\.jpg\|\.png\|\.gif\|.jpeg"`
+if [ -z $COVERS ]; then
+	COVERS="$DEFAULT_COVER"
+else
+	TRYCOVERS=`echo "$COVERS" | grep  "cover\|front\|folder\|albumart\|Cover\|Front\|Folder\|Albumart\|f\|F" | head -n 1`
+	TRYCOVERS="$FULLDIR/$TRYCOVERS"
+fi
+
+echo -n "$TRYCOVERS"

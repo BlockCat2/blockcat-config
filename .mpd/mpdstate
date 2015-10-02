@@ -1,0 +1,37 @@
+sw_volume: 1
+audio_device_state:0:salsa
+audio_device_state:1:pulser
+audio_device_state:1:my_fifo
+state: stop
+random: 0
+repeat: 0
+single: 0
+consume: 1
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Podcasts/Common Filth Radio/Common Filth Radio - Episode 23 (Human Experimentation).mp3
+1:Podcasts/Common Filth Radio/Common Filth Radio - Episode 24 (HuniePop Polyamory).mp3
+2:Podcasts/Common Filth Radio/Common Filth Radio - Episode 25 (Reality's Malaise).mp3
+3:Podcasts/Common Filth Radio/Common Filth Radio - Episode 26 (WHEN MILLENNIALS ATTACK).mp3
+4:Rock/Corey Hart/[1992] Attitude & Virtue/03 - Baby When I Call Your Name.mp3
+5:Rock/Corey Hart/[1992] Attitude & Virtue/04 - She'e Everywhere.mp3
+6:Rock/Corey Hart/[1992] Attitude & Virtue/05 - I Want (Cool Cool Love).mp3
+7:Rock/Corey Hart/[1992] Attitude & Virtue/06 - Always.mp3
+8:Rock/Corey Hart/[1992] Attitude & Virtue/07 - Poster.mp3
+9:Rock/Corey Hart/[1992] Attitude & Virtue/08 - 92 Days of Rain.mp3
+10:Rock/Corey Hart/[1992] Attitude & Virtue/09 - Without Your Love.mp3
+11:Rock/Corey Hart/[1992] Attitude & Virtue/10 - Sonnets From the Portuguese.mp3
+12:Rock/Corey Hart/[1996] Corey Hart (Self titled)/01 - Black Cloud Rain.mp3
+13:Rock/Corey Hart/[1996] Corey Hart (Self titled)/02 - Someone.mp3
+14:Rock/Corey Hart/[1996] Corey Hart (Self titled)/03 - Love Hurts.mp3
+15:Rock/Corey Hart/[1996] Corey Hart (Self titled)/04 - Third of June.mp3
+16:Rock/Corey Hart/[1996] Corey Hart (Self titled)/05 - Simplicity.mp3
+17:Rock/Corey Hart/[1996] Corey Hart (Self titled)/06 - Tell me.mp3
+18:Rock/Corey Hart/[1996] Corey Hart (Self titled)/07 - Angel of my Soul.mp3
+19:Rock/Corey Hart/[1996] Corey Hart (Self titled)/08 - Sunflowers.mp3
+20:Rock/Corey Hart/[1996] Corey Hart (Self titled)/09 - Kiss the Sky.mp3
+21:Rock/Corey Hart/[1996] Corey Hart (Self titled)/10 - On your Own.mp3
+22:Rock/Corey Hart/[1996] Corey Hart (Self titled)/11 - India.mp3
+playlist_end

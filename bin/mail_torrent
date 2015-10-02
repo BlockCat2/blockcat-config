@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "$1" | mail -s "[RT]-C" "7035977442@vmobl.com"
+sleep 5s
+notify-send "RTorrent Complete:" "$1 Finished." -u normal

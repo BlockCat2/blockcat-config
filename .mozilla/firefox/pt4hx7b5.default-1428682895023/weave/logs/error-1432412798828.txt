@@ -1,0 +1,38 @@
+1432412797256	Sync.Service	INFO	Loading Weave 1.39.0
+1432412797262	Sync.Engine.Clients	DEBUG	Engine initialized
+1432412797264	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1432412797273	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1432412797278	Sync.Engine.Forms	DEBUG	Engine initialized
+1432412797285	Sync.Engine.History	DEBUG	Engine initialized
+1432412797292	Sync.Engine.Passwords	DEBUG	Engine initialized
+1432412797297	Sync.Engine.Prefs	DEBUG	Engine initialized
+1432412797303	Sync.Engine.Tabs	DEBUG	Engine initialized
+1432412797304	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1432412797314	Sync.Engine.Addons	DEBUG	Engine initialized
+1432412797317	Sync.Service	INFO	Mozilla/5.0 (Windows NT 6.3; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+1432412797322	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1432412797323	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1432412797324	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-191-us-west-2.sync.services.mozilla.com/1.5/17789140/
+1432412797324	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1432412797368	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1432412797372	Sync.Engine.Greasemonkey	DEBUG	Engine initialized
+1432412797377	Sync.Engine.AdblockPlus	DEBUG	Engine initialized
+1432412797379	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1432412797396	FirefoxAccounts	DEBUG	got keyPair
+1432412797396	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1432412797541	Sync.Tracker.AdblockPlus	WARN	Changed IDs file adblockplus contains non-object value.
+1432412797542	Sync.Tracker.AdblockPlus.private	WARN	Changed IDs file adblockplus.private contains non-object value.
+1432412798020	Hawk	DEBUG	(Response) /certificate/sign: code: 200 - Status text: OK
+1432412798021	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1021
+1432412798022	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1432412798022	FirefoxAccounts	DEBUG	getAssertionFromCert
+1432412798026	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1432412798026	Sync.BrowserIDManager	DEBUG	Getting a token
+1432412798027	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1432412798821	Common.TokenServerClient	DEBUG	Got token response: 503
+1432412798822	Common.TokenServerClient	INFO	Server-reported error: {"location":"body","name":"","description":"Resource is not available"}
+1432412798823	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientServerError({"now":"2015-05-23T20:26:38.822Z","message":"Server error.","cause":"general","response_body":"{\"status\": \"error\", \"errors\": [{\"location\": \"body\", \"name\": \"\", \"description\": \"Resource is not available\"}]}","response_headers":{"content-type":"application/json; charset=UTF-8","date":"Sat, 23 May 2015 20:26:38 GMT","x-timestamp":"1432412798","content-length":"109","connection":"keep-alive"},"response_status":503}) (resource://gre/modules/services-common/tokenserverclient.js:36:35) JS Stack trace: @tokenserverclient.js:36:36 < @browserid_identity.js:14:1 < @status.js:15:1 < SyncServiceObserver.init@sync.js:65:59 < @sync.js:448:1 < require@bootstrap.js:141:4 < @main.js:18:1 < require@bootstrap.js:141:4 < startup@bootstrap.js:28:2 < XPI_callBootstrapMethod@XPIProvider.jsm:4442:9 < XPI_startup@XPIProvider.jsm:2161:13 < callProvider@AddonManager.jsm:208:12 < _startProvider@AddonManager.jsm:667:5 < AMI_startup@AddonManager.jsm:824:9 < AMP_startup@AddonManager.jsm:2402:5 < AMC_observe@addonManager.js:55:7
+1432412798825	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1432412798826	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1432412798826	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1432412798827	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms.

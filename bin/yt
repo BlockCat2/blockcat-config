@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+# strelokcat - (c) wtfpl 2014
+# Require :  ys (youtube search)
+
+
+usage() {
+    echo "`basename $0` [-h] <query>"
+}
+
+# don't process if no argument given
+test $# -eq 0 && usage && exit 1
+
+# you can either pass MULTIPLE search terms or a SINGLE url
+uri=$(ys -n1 -u $@ ) || uri=$1
+#text=$(ys -n1 -t $@)
+
+# give up if we got no uri
+if test -z "$uri"; then
+    echo "no result found"
+    exit 1
+fi
+
+echo -en "\n\n--- Playing: < $text > ---"
+mpv --vo=xv -fps 60 --really-quiet $uri
+
+exit 0

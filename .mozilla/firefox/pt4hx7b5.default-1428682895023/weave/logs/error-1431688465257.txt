@@ -1,0 +1,10 @@
+1431688465240	Sync.ErrorHandler	DEBUG	Flushing file log.
+1431688465242	Sync.BrowserIDManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}}) (resource://gre/modules/services-common/tokenserverclient.js:36:35) JS Stack trace: @tokenserverclient.js:36:36 < @browserid_identity.js:14:1 < @status.js:15:1 < SyncServiceObserver.init@sync.js:65:59 < @sync.js:448:1 < require@bootstrap.js:141:4 < @main.js:18:1 < require@bootstrap.js:141:4 < startup@bootstrap.js:28:2 < XPI_callBootstrapMethod@XPIProvider.jsm:4442:9 < XPI_startup@XPIProvider.jsm:2161:13 < callProvider@AddonManager.jsm:208:12 < _startProvider@AddonManager.jsm:667:5 < AMI_startup@AddonManager.jsm:824:9 < AMP_startup@AddonManager.jsm:2402:5 < AMC_observe@addonManager.js:55:7
+1431688465248	Sync.BrowserIDManager	INFO	currentAuthState returning error.login.reason.network due to previous failure
+1431688465248	Sync.Status	DEBUG	Status.login: error.login.reason.network => error.login.reason.network
+1431688465248	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1431688465254	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1431688465254	Sync.Status	DEBUG	Status.service: error.login.failed => error.sync.failed
+1431688465256	Sync.SyncScheduler	DEBUG	Sync error count has exceeded 3; enforcing backoff.
+1431688465256	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 3088074 ms.
+1431688465256	Sync.SyncScheduler	DEBUG	Next sync in 3088074 ms.

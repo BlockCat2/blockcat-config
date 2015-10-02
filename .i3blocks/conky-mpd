@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+case $BLOCK_BUTTON in
+     3) mpc toggle ;;
+     *) mpc current ;;
+esac

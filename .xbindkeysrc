@@ -1,0 +1,96 @@
+# For the benefit of emacs users: -*- shell-script -*-
+###########################
+# xbindkeys configuration #
+###########################
+#
+# Version: 1.8.6
+#
+# If you edit this file, do not forget to uncomment any lines
+# that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# To specify a key, you can use 'xbindkeys --key' or
+# 'xbindkeys --multikey' and put one of the two lines in this file.
+#
+# The format of a command line is:
+#    "command to start"
+#       associated key
+#
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h
+# The XK_ is not needed.
+#
+# List of modifier:
+#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+#
+
+# The release modifier is not a standard X modifier, but you can
+# use it if you want to catch release events instead of press events
+
+# By defaults, xbindkeys does not pay attention with the modifiers
+# NumLock, CapsLock and ScrollLock.
+# Uncomment the lines above if you want to pay attention to them.
+
+#keystate_numlock = enable
+#keystate_capslock = enable
+#keystate_scrolllock= enable
+
+# Custom binds of commands:
+"import -window root ~/Pictures/screen/$(date '+%Y%m%d-%H%M%S').png"
+	Print
+"rxvt-unicode"
+  mod4+t
+"xbindkeys_show" 
+  control+shift + q
+"mpc toggle"
+  XF86AudioPlay
+"mpc random"
+  Mod4+XF86AudioPlay
+"mpc stop"
+  XF86AudioStop
+"mpc prev"
+  XF86AudioPrev
+"mpc next"
+  XF86AudioNext
+"amixer set Headphone 2dB+"
+  control+shift + F1
+"amixer set Headphone 2dB-"
+  control+shift + F2
+"gamma up 0.5"
+  XF86MonBrightnessUp
+"gamma down 0.5"
+ XF86MonBrightnessDown
+"volume up 2"
+	XF86AudioRaiseVolume
+"volume down 2"
+	XF86AudioLowerVolume
+"ncmpcpp"
+	XF86AudioMute
+# set directly keycode (here control + f with my keyboard)
+#"xterm"
+#  c:41 + m:0x4
+
+# specify a mouse button
+#"xterm"
+#  control + b:2
+
+#"xterm -geom 50x20+20+20"
+#   Shift+Mod2+alt + s
+#
+## set directly keycode (here control+alt+mod2 + f with my keyboard)
+#"xterm"
+#  alt + c:0x29 + m:4 + mod2
+#
+## Control+Shift+a  release event starts rxvt
+#"rxvt"
+#  release+control+shift + a
+#
+## Control + mouse button 2 release event starts rxvt
+#"rxvt"
+#  Control + b:2 + Release
+
+##################################
+# End of xbindkeys configuration #
+##################################

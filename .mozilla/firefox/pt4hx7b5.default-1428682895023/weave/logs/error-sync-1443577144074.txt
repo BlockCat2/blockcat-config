@@ -1,0 +1,25 @@
+1443573058124	Sync.Tracker.Clients	DEBUG	Saving changed IDs to clients
+1443576684870	Sync.Service	DEBUG	User-Agent: Firefox/41.0 FxSync/1.43.0.20150923050452.
+1443576684871	Sync.Service	INFO	Starting sync at 2015-09-29 20:31:24
+1443576684875	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1443576684877	Sync.Status	INFO	Resetting Status.
+1443576684877	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443576684879	FirefoxAccounts	DEBUG	already verified
+1443576684881	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1443576684881	FirefoxAccounts	DEBUG	enter getAssertion()
+1443576684889	FirefoxAccounts	DEBUG	getKeyPair: already have a keyPair
+1443576684889	FirefoxAccounts	DEBUG	 getCertificate already had one
+1443576684889	FirefoxAccounts	DEBUG	getAssertionFromCert
+1443576684891	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1443576684892	Sync.BrowserIDManager	DEBUG	Getting a token
+1443576684893	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1443576954999	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}}) (resource://gre/modules/services-common/tokenserverclient.js:36:36) JS Stack trace: @tokenserverclient.js:36:36 < @browserid_identity.js:14:1 < @status.js:15:1 < SyncServiceObserver.init@sync.js:65:59 < @sync.js:448:1 < require@bootstrap.js:141:4 < @main.js:18:1 < require@bootstrap.js:141:4 < startup@bootstrap.js:28:2 < XPI_callBootstrapMethod@XPIProvider.jsm:4657:9 < XPI_startup@XPIProvider.jsm:2376:13 < callProvider@AddonManager.jsm:221:12 < _startProvider@AddonManager.jsm:828:5 < AMI_startup@AddonManager.jsm:996:9 < AMP_startup@AddonManager.jsm:2669:5 < AMC_observe@addonManager.js:58:7
+1443576955001	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1443576955001	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1443576955009	Sync.BrowserIDManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}}) (resource://gre/modules/services-common/tokenserverclient.js:36:36) JS Stack trace: @tokenserverclient.js:36:36 < @browserid_identity.js:14:1 < @status.js:15:1 < SyncServiceObserver.init@sync.js:65:59 < @sync.js:448:1 < require@bootstrap.js:141:4 < @main.js:18:1 < require@bootstrap.js:141:4 < startup@bootstrap.js:28:2 < XPI_callBootstrapMethod@XPIProvider.jsm:4657:9 < XPI_startup@XPIProvider.jsm:2376:13 < callProvider@AddonManager.jsm:221:12 < _startProvider@AddonManager.jsm:828:5 < AMI_startup@AddonManager.jsm:996:9 < AMP_startup@AddonManager.jsm:2669:5 < AMC_observe@addonManager.js:58:7
+1443576955016	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1443576955017	FirefoxAccounts	DEBUG	getOAuthToken enter
+1443576955022	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1443576955023	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1443577144073	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms.
+1443577144073	Sync.ErrorHandler	ERROR	Sync encountered an error

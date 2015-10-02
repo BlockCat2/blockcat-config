@@ -1,0 +1,8 @@
+#!/bin/bash
+
+IP=$(curl curlmyip.com)
+
+case $BLOCK_BUTTON in
+     3) echo "$IP" | xclip -selection clipboard ;;
+     *) echo "$IP" ;;
+esac

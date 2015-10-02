@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ -z "$1" ]; then echo Give target directory; exit 0;fi
+if [ -z "$2" ]; then echo Give target extension; exit 0;fi
+
+find "$1" -depth -name "*.$2" | while read a; do 
+dir=$(dirname "$a")
+old=$(basename "$a")
+new=$(basename "${a%.[Ff][Ll][Aa][Cc]}")
+#new=$(basename "${a%.[Mm][Pp][3]}")
+
+if [ "$old" != "$new" ]; then
+	ffmpeg -i "$dir/$old" -ab 320k "$dir/$new.ogg" </dev/null
+	 #rm "$dir/$old"
+fi
+done

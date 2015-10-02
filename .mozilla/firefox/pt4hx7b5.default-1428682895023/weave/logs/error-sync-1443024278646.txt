@@ -1,0 +1,28 @@
+1443024253963	Sync.Service	INFO	Loading Weave 1.42.0
+1443024253965	Sync.Engine.Clients	DEBUG	Engine initialized
+1443024253967	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1443024253991	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1443024254010	Sync.Engine.Forms	DEBUG	Engine initialized
+1443024254030	Sync.Engine.History	DEBUG	Engine initialized
+1443024254056	Sync.Engine.Passwords	DEBUG	Engine initialized
+1443024254060	Sync.Engine.Prefs	DEBUG	Engine initialized
+1443024254064	Sync.Engine.Tabs	DEBUG	Engine initialized
+1443024254065	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1443024254093	Sync.Engine.Addons	DEBUG	Engine initialized
+1443024254094	Sync.Service	INFO	Mozilla/5.0 (Windows NT 6.3; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+1443024254098	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1443024254099	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443024254100	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-191-us-west-2.sync.services.mozilla.com/1.5/17789140/
+1443024254100	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443024254220	Sync.Engine.AdblockPlus	DEBUG	Engine initialized
+1443024254221	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443024255559	FirefoxAccounts	DEBUG	got keyPair
+1443024255560	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1443024258221	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443024258254	Sync.Service	DEBUG	User-Agent: Firefox/40.0.3 FxSync/1.42.0.20150827201206.
+1443024258254	Sync.Service	INFO	Starting sync at 2015-09-23 11:04:18
+1443024258255	Sync.Service	DEBUG	In sync: should login.
+1443024258255	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443024258256	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443024278645	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1443024278645	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms.

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+UP=$(checkupdates | wc -l)
+
+echo "$UP Updates"

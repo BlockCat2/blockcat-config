@@ -1,0 +1,36 @@
+#!/bin/bash
+for (( ; ; ))
+do
+    ART=`coverart`
+    
+    old_last=`cat $HOME/.mpdscribble/mpdscribble.log | grep "new song" | tail -n 1`
+    old="`mpc | head -n 1`"
+    sleep 2
+    new_last=`cat $HOME/.mpdscribble/mpdscribble.log | grep "new song" | tail -n 1`
+    new="`mpc | head -n 1`"
+    
+    if [ "`echo ${new} | grep volume | grep repeat | grep random`" != "" ] ; then
+        if [ "$old" != "$new" ] ; then
+           # notify-send "MPD Playback stopped:" "`date +'%I:%M %p'`
+          shit=`date`
+					 notify-send -t 5 "MPD Plauback stopped"
+           #echo 'naughty.notify({timeout = 6, title = "MPD Playback stopped:", text = "'$shit'"})' | awesome-client
+           #bk-music
+        fi
+        old="$new"
+    fi
+    if [ "$old" != "$new" ] ; then
+
+        COVERART=`coverart`
+        artist="Artist: `mpc current -f %artist%`"
+        album="Album: `mpc current -f %album%`"
+        year="Year: `mpc current -f %date%`"
+        song="Song: `mpc current`"
+        
+        title="$artist"
+        info="$artist\n$album\n$year\n$song"
+				notify-send -i "$ART"  "$info"
+        #echo 'naughty.notify({timeout = 6, icon = "'$COVERART'", icon_size = "300", text = "'$info'"})' | awesome-client
+
+    fi
+done

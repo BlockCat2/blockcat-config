@@ -1,0 +1,22 @@
+1431979798996	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1431979799427	Sync.Tracker.Clients	DEBUG	Saving changed IDs to clients
+1431979799987	Sync.Tracker.Greasemonkey	DEBUG	Saving changed IDs to greasemonkey
+1431983398996	Sync.Service	DEBUG	User-Agent: Firefox/37.0.2 FxSync/1.39.0.20150417180058.
+1431983398996	Sync.Service	INFO	Starting sync at 2015-05-18 17:09:58
+1431983399000	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1431983399001	Sync.Status	INFO	Resetting Status.
+1431983399001	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1431983399003	FirefoxAccounts	DEBUG	already verified
+1431983399005	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1431983399006	FirefoxAccounts	DEBUG	enter getAssertion()
+1431983399012	FirefoxAccounts	DEBUG	getKeyPair: already have a keyPair
+1431983399012	FirefoxAccounts	DEBUG	 getCertificate already had one
+1431983399012	FirefoxAccounts	DEBUG	getAssertionFromCert
+1431983399014	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1431983399015	Sync.BrowserIDManager	DEBUG	Getting a token
+1431983399016	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1431983399021	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}}) (resource://gre/modules/services-common/tokenserverclient.js:36:35) JS Stack trace: @tokenserverclient.js:36:36 < @browserid_identity.js:14:1 < @status.js:15:1 < SyncServiceObserver.init@sync.js:65:59 < @sync.js:448:1 < require@bootstrap.js:141:4 < @main.js:18:1 < require@bootstrap.js:141:4 < startup@bootstrap.js:28:2 < XPI_callBootstrapMethod@XPIProvider.jsm:4442:9 < XPI_startup@XPIProvider.jsm:2161:13 < callProvider@AddonManager.jsm:208:12 < _startProvider@AddonManager.jsm:667:5 < AMI_startup@AddonManager.jsm:824:9 < AMP_startup@AddonManager.jsm:2402:5 < AMC_observe@addonManager.js:55:7
+1431983399023	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1431983399023	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1431983399023	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1431983399023	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms.

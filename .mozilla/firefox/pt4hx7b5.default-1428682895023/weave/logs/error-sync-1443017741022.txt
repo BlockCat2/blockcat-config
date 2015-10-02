@@ -1,0 +1,29 @@
+1443017639646	Sync.Service	INFO	Loading Weave 1.42.0
+1443017639649	Sync.Engine.Clients	DEBUG	Engine initialized
+1443017639650	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1443017639658	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1443017639678	Sync.Engine.Forms	DEBUG	Engine initialized
+1443017639683	Sync.Engine.History	DEBUG	Engine initialized
+1443017639711	Sync.Engine.Passwords	DEBUG	Engine initialized
+1443017639714	Sync.Engine.Prefs	DEBUG	Engine initialized
+1443017639738	Sync.Engine.Tabs	DEBUG	Engine initialized
+1443017639739	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1443017639761	Sync.Engine.Addons	DEBUG	Engine initialized
+1443017639763	Sync.Service	INFO	Mozilla/5.0 (Windows NT 6.3; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+1443017639767	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1443017639768	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443017639769	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-191-us-west-2.sync.services.mozilla.com/1.5/17789140/
+1443017639769	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443017639946	Sync.Engine.Greasemonkey	DEBUG	Engine initialized
+1443017639949	Sync.Engine.AdblockPlus	DEBUG	Engine initialized
+1443017639950	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443017640170	FirefoxAccounts	DEBUG	got keyPair
+1443017640170	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1443017643951	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443017643952	Sync.Service	DEBUG	User-Agent: Firefox/40.0.3 FxSync/1.42.0.20150827201206.
+1443017643952	Sync.Service	INFO	Starting sync at 2015-09-23 09:14:03
+1443017643952	Sync.Service	DEBUG	In sync: should login.
+1443017643954	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443017643955	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1443017741020	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1443017741021	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms.

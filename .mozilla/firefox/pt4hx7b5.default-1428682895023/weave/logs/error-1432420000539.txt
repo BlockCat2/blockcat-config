@@ -1,0 +1,41 @@
+1432416400017	Sync.ErrorHandler	DEBUG	Flushing file log.
+1432416400020	Sync.Service	DEBUG	Exception: TokenServerClientServerError({"now":"2015-05-23T21:26:40.006Z","message":"Server error.","cause":"general","response_body":"{\"status\": \"error\", \"errors\": [{\"location\": \"body\", \"name\": \"\", \"description\": \"Resource is not available\"}]}","response_headers":{"content-type":"application/json; charset=UTF-8","date":"Sat, 23 May 2015 21:26:39 GMT","x-timestamp":"1432416399","content-length":"109","connection":"keep-alive"},"response_status":503}) (resource://gre/modules/services-common/tokenserverclient.js:36:35) JS Stack trace: @tokenserverclient.js:36:36 < @browserid_identity.js:14:1 < @status.js:15:1 < SyncServiceObserver.init@sync.js:65:59 < @sync.js:448:1 < require@bootstrap.js:141:4 < @main.js:18:1 < require@bootstrap.js:141:4 < startup@bootstrap.js:28:2 < XPI_callBootstrapMethod@XPIProvider.jsm:4442:9 < XPI_startup@XPIProvider.jsm:2161:13 < callProvider@AddonManager.jsm:208:12 < _startProvider@AddonManager.jsm:667:5 < AMI_startup@AddonManager.jsm:824:9 < AMP_startup@AddonManager.jsm:2402:5 < AMC_observe@addonManager.js:55:7
+1432416400020	Sync.Service	DEBUG	Not syncing: login returned false.
+1432416400042	Sync.BrowserIDManager	INFO	currentAuthState returning error.login.reason.network due to previous failure
+1432416400042	Sync.Status	DEBUG	Status.login: error.login.reason.network => error.login.reason.network
+1432416400042	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1432416400059	Sync.BrowserIDManager	INFO	currentAuthState returning error.login.reason.network due to previous failure
+1432416400059	Sync.Status	DEBUG	Status.login: error.login.reason.network => error.login.reason.network
+1432416400059	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1432416400083	Sync.ErrorHandler	DEBUG	Log cleanup threshold time: 1431552400083
+1432416400085	Sync.ErrorHandler	DEBUG	No logs to clean up.
+1432416400086	Sync.ErrorHandler	DEBUG	Log cleanup threshold time: 1431552400085
+1432416400087	Sync.ErrorHandler	DEBUG	No logs to clean up.
+1432420000018	Sync.Service	DEBUG	User-Agent: Firefox/37.0.2 FxSync/1.39.0.20150417180058.
+1432420000019	Sync.Service	INFO	Starting sync at 2015-05-23 18:26:40
+1432420000020	Sync.Service	DEBUG	In sync: should login.
+1432420000021	Sync.BrowserIDManager	INFO	currentAuthState returning error.login.reason.network due to previous failure
+1432420000021	Sync.Status	DEBUG	Status.login: error.login.reason.network => error.login.reason.network
+1432420000021	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1432420000021	Sync.BrowserIDManager	INFO	currentAuthState returning error.login.reason.network due to previous failure
+1432420000022	Sync.Status	DEBUG	Status.login: error.login.reason.network => error.login.reason.network
+1432420000022	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1432420000060	Sync.BrowserIDManager	INFO	Waiting for user to be verified.
+1432420000060	FirefoxAccounts	DEBUG	already verified
+1432420000060	Sync.BrowserIDManager	INFO	Starting fetch for key bundle.
+1432420000061	FirefoxAccounts	DEBUG	already verified
+1432420000061	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1432420000062	FirefoxAccounts	DEBUG	enter getAssertion()
+1432420000066	FirefoxAccounts	DEBUG	getKeyPair: already have a keyPair
+1432420000066	FirefoxAccounts	DEBUG	 getCertificate already had one
+1432420000067	FirefoxAccounts	DEBUG	getAssertionFromCert
+1432420000069	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1432420000070	Sync.BrowserIDManager	DEBUG	Getting a token
+1432420000072	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1432420000533	Common.TokenServerClient	DEBUG	Got token response: 503
+1432420000533	Common.TokenServerClient	INFO	Server-reported error: {"location":"body","name":"","description":"Resource is not available"}
+1432420000534	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientServerError({"now":"2015-05-23T22:26:40.534Z","message":"Server error.","cause":"general","response_body":"{\"status\": \"error\", \"errors\": [{\"location\": \"body\", \"name\": \"\", \"description\": \"Resource is not available\"}]}","response_headers":{"content-type":"application/json; charset=UTF-8","date":"Sat, 23 May 2015 22:26:40 GMT","x-timestamp":"1432420000","content-length":"109","connection":"keep-alive"},"response_status":503}) (resource://gre/modules/services-common/tokenserverclient.js:36:35) JS Stack trace: @tokenserverclient.js:36:36 < @browserid_identity.js:14:1 < @status.js:15:1 < SyncServiceObserver.init@sync.js:65:59 < @sync.js:448:1 < require@bootstrap.js:141:4 < @main.js:18:1 < require@bootstrap.js:141:4 < startup@bootstrap.js:28:2 < XPI_callBootstrapMethod@XPIProvider.jsm:4442:9 < XPI_startup@XPIProvider.jsm:2161:13 < callProvider@AddonManager.jsm:208:12 < _startProvider@AddonManager.jsm:667:5 < AMI_startup@AddonManager.jsm:824:9 < AMP_startup@AddonManager.jsm:2402:5 < AMC_observe@addonManager.js:55:7
+1432420000537	Sync.Status	DEBUG	Status.login: error.login.reason.network => error.login.reason.network
+1432420000537	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1432420000537	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1432420000538	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms.

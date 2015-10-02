@@ -1,0 +1,24 @@
+#!/bin/bash
+#cd "$HOME/Pictures/temp"
+if [ "$#" -lt 1 ]; then
+    echo "usage: ${0} thread-url"
+    exit 1
+fi
+
+if echo "$1" | grep "4chan.org/"; then
+    wget -O- "$@" | egrep -o -E "i.4cdn.org/[0-9a-z]{,30}/[0-9-]{13,15}\.[a-zA-Z4]{3,4}" | sort | uniq | xargs -n 1 -P 4 wget
+elif echo $1 | grep "8ch.net/"; then
+    #wget -O- $@ | egrep -o "[0-9a-z]{,30}\/src\/[0-9-]{13,15}\.[a-zA-Z4]{3,4}" | uniq | xargs -n 1 -P4 wget
+    #url="https://8ch.net/"
+    #echo "$url"
+    #echo "https://8ch.net/$shit" | sort | uniq | xargs -n 1 -P 4 wget
+    
+    regex='https://8ch.net/[^"/]+/src/[^"]+'
+    subs='s@href="@@g'
+elif echo $1 | grep "lainchan.org/"; then
+		regex='https://lainchan.org/[^"/]+/src/[^"]+'
+		subs='s@href="@@g'
+else
+    exit 1
+fi
+wget -O- $1 | grep -o -E $regex | sed $subs | uniq | xargs -P 4 wget -c

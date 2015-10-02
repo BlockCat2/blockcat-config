@@ -1,0 +1,30 @@
+set mbox_type=Maildir
+set imap_user=schwaydude@tfwno.gf
+set imap_pass=haskellisamemelanguage
+set folder=imaps://mail.cock.li/
+set spoolfile=+/
+
+
+
+set smtp_url=smtp://schwaydude@tfwno.gf:haskellisamemelanguage@mail.cock.li
+set realname='StrelokCat'
+set from=schwaydude@tfwno.gf
+set hostname="mail.cock.li"
+set signature=""
+
+set ssl_force_tls = yes
+set ssl_starttls
+
+# le tricky hook
+account-hook $folder "set imap_user=schwaydude@tfwno.gf imap_pass=haskellisamemelanguage"
+
+
+set edit_headers = yes
+
+unmy_hdr *
+
+my_hdr X-Info: Keep It Simple, Stupid
+my_hdr X-Operating-System: `uname -s`, kernal `uname -r`
+
+my_hdr User-Agent: Every email client sucks, this one just sucks less.
+set editor="emacsclient -a \"\" -t"

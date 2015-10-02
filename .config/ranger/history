@@ -1,0 +1,50 @@
+mkdir image
+open_with vim
+rename 1434987679251.pdf
+rename cleancode.pdf
+rename Lainzine 01.pdf
+find 
+mkdir opsec
+rename thinking functionally with haskell.pdf
+rename web application hackers handbook.pdf
+rename tracking human mobility using WiFi Signals.pdf
+open_with unzip
+rename old.jpg
+paste
+rename new.jpg
+rename settings
+open_with mpv --vo=xv -fps 60 --hwdec="auto"
+open_with mpv --vo=opengl -fps 60 --hwdec="auto"
+rename Lainzine 02.pdf
+mkdir Sora No Woto
+rename cover.jpg
+rename Corey Hart
+sta
+rename staringloli.jpg
+cd .emacs.d/
+cd .wallpapers/
+mkdir hen
+mkdir Punk
+copy
+rename mmononoke.jpg
+cd .wallpapers/40k
+open_with 11
+rename red-deer.png
+mkdir cfw
+mkdir PSP
+mkdir roms
+
+mkdir Chan
+mkdir Music
+mkdir wallpaper
+rename EVE no Jikan
+rename Fate Zero
+rename Golden Boy
+rename FLCL
+rename Usagi Drop
+delete
+open_with 
+open_with mpv --vo=xv -fps 60
+rename 11 - Langa Bolla Bengt (Svenne Rubins Cover).ogg
+rename 10 - Fur Immer (DORO Cover).ogg
+open_with jjjjjjjjjjjj

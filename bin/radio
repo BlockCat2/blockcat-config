@@ -1,0 +1,56 @@
+#!/bin/bash
+
+setup(){
+    LUSH_URL="http://somafm.com/lush.pls"
+    DEFCON_URL="http://somafm.com/defcon.pls"
+    MISSION_URL="http://somafm.com/missioncontrol.pls"
+    EIGHT_URL="http://somafm.com/u80s192.pls"
+    DEEP_URL="http://somafm.com/deepspaceone.pls"
+    K_URL="http://murdercube.com:8080/stream"
+    LAIN_URL="https://lainchan.org/static/lain.mp3.m3u"
+}
+
+choose(){
+if [[ "$CHOICE" == 1 ]]; then
+	mpv "$DEFCON_URL"
+elif [[ "$CHOICE" == 2 ]]; then
+	mpv "$LUSH_URL"
+elif [[ "$CHOICE" == 3 ]]; then
+	mpv "$MISSION_URL"
+elif [[ "$CHOICE" == 4 ]]; then
+	mpv "$EIGHT_URL"
+elif [[ "$CHOICE" == 5 ]]; then
+	mpv "$DEEP_URL"
+elif [[ "$CHOICE" == 6 ]]; then
+    mpv "$K_URL"
+elif [[ "$CHOICE" == 7 ]]; then
+    mpv "$LAIN_URL"
+	fi
+}
+
+station() {
+	CHOICE=$3
+	echo "$CHOICE"
+	choose
+}
+
+base() {
+    setup
+	echo "What Station?"
+
+	echo -e "\t1 - Defcon - Music for programming"
+	echo -e "\t2 - Lush - Mellow female vocal + electronic"
+	echo -e "\t3 - Mission Control - Ambient + NASA Sounds"
+	echo -e "\t4 - Underground 80's - Synthpop + newwave"
+	echo -e "\t5 - Deep Space - Deep ambient with space"
+  echo -e "\t6 - Kommando Radio"
+  echo -e "\t7 - Lainchan Radio - Schway as furruak"
+
+	read CHOICE
+	choose
+}
+
+case $1 in
+	-r) station ;;
+	 *) base
+esac

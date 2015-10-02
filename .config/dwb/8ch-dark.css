@@ -1,0 +1,91 @@
+/* Enter here your own CSS rules... */
+/* If you want to make a redistributable style, be sure to
+   have a Yotsuba B theme selected. */
+/* You can include CSS files from remote servers, for example: */
+
+body {
+  background: rgba(0,0,0,.9);
+  color: rgba(255,255,255,.9);
+}
+.boardlist {
+  background: rgba(0,0,0,.9)!important;
+}
+p.intro span.subject {
+  color: rgba(198,203,255,1);
+}
+header div.subtitle, h1 {
+  color: rgba(255,255,255,.8);
+}
+.banner {
+  display: none;
+}
+a, a:visited {
+  color: rgb(255, 192, 163);
+}
+a:hover {
+  color: rgba(255,255,255,.5);
+}
+hr {
+  display: none;
+}
+form[name=post] {
+  display: block;
+  background: rgba(255,255,255,.1);
+  padding: 1em;
+  border: 1px solid rgba(0,0,0,.2);
+  position: fixed;
+  width: 25em;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+  form[name=post] table tr th {
+    background: rgba(216, 193, 255,.2);
+  }
+form[name=postcontrols] {
+  margin-right: 30em;
+}
+div.post.reply {
+  width: 100%;
+  background: rgba(255,255,255,.1);
+  border: 0;
+  padding: 0;
+}
+div.post.reply p {
+  margin: 0;
+}
+div.post.reply div.body {
+  padding: 1em;
+  margin: 0;
+}
+span.trip {
+  color: rgba(201,255,255,1);
+}
+span.heading {
+  color: rgb(255, 137, 137);
+}
+.reply p.intro {
+  background: rgba(0,0,0,.2);
+  margin: 0;
+  padding: .5em;
+}
+p.intro span.capcode {
+  color: rgb(255, 91, 91);
+  text-shadow: .1em .15em rgba(0,0,0,.9);
+}
+p.intro span.name {
+  color: rgba(160, 245, 255,1);
+}
+p.intro a {
+  color: rgb(239, 211, 255);
+}
+div.post.reply div.body a {
+  color: rgba(188, 255, 204,.3);
+}
+div.pages {
+  background: transparent;
+  border: none;
+}
+div.boardlist.bottom {
+  margin-right: 30em;
+}

@@ -1,0 +1,22 @@
+!#include "/home/emperor/.Xresources_butter"
+#include "/home/emperor/.Xresources_numix"
+Xft.dpi: 96
+!Xft.antialias: true
+!Xft.hinting: true
+!Xft.rgba: rgb
+!Xft.autohint: false
+!Xft.hintstyle: hintslight
+!Xft.lcdfilter: lcddefault
+!xterm*font:DejaVu Sans Mono For Powerline 10
+!xterm*boldFont: fixed
+!XTerm*utf8: true
+!XTerm*faceName: Terminus
+!XTerm*faceNameDoublesize: WenQuanYi Zen Hei Mono
+!XTerm*faceSize: 10 
+! workaround of disappearing underscore ('_') character
+!XTerm*scaleHeight: 1.01
+URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=9
+URxvt.scrollBar: false
+URxvt.intensityStyles: false
+URxvt.transparent: true
+URxvt.shading: 30

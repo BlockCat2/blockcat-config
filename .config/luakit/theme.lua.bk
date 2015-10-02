@@ -1,0 +1,69 @@
+--------------------------
+-- Default luakit theme --
+--------------------------
+
+local theme = {}
+
+-- Default settings
+theme.font = "cure 9"
+theme.fg   = "#AAABAD"
+theme.bg   = "#27282B"
+
+-- Genaral colours
+theme.success_fg = "#A9C938"
+theme.loaded_fg  = "#00AFDA"
+theme.error_fg = "#E7212A"
+theme.error_bg = "#F79321"
+
+-- Warning colours
+theme.warning_fg = "#d43f19"
+theme.warning_bg = "#4c4c4c"
+
+-- Notification colours
+theme.notif_fg = "#49d4dd"
+theme.notif_bg = "#52707b"
+
+-- Menu colours
+theme.menu_fg                   = "#b3b3b3"
+theme.menu_bg                   = "#4c4c4c"
+theme.menu_selected_fg          = "#cef318"
+theme.menu_selected_bg          = "#427363"
+theme.menu_title_bg             = "#784742"
+theme.menu_primary_title_fg     = "#cef318"
+theme.menu_secondary_title_fg   = "#bfe207"
+
+-- Proxy manager
+theme.proxy_active_menu_fg      = '#000'
+theme.proxy_active_menu_bg      = '#FFF'
+theme.proxy_inactive_menu_fg    = '#888'
+theme.proxy_inactive_menu_bg    = '#FFF'
+
+-- Statusbar specific
+theme.sbar_fg         = "#cef318"
+theme.sbar_bg         = "#4c4c4c"
+
+-- Downloadbar specific
+theme.dbar_fg         = "#cef318"
+theme.dbar_bg         = "#4c4c4c"
+theme.dbar_error_fg   = "#d43f10"
+
+-- Input bar specific
+theme.ibar_fg           = "#cef318"
+theme.ibar_bg           = "#4c4c4c"
+
+-- Tab label
+theme.tab_fg            = "#888"
+theme.tab_bg            = "#222"
+theme.tab_ntheme        = "#ddd"
+theme.selected_fg       = "#fff"
+theme.selected_bg       = "#000"
+theme.selected_ntheme   = "#ddd"
+theme.loading_fg        = "#33AADD"
+theme.loading_bg        = "#000"
+
+-- Trusted/untrusted ssl colours
+theme.trust_fg          = "#0F0"
+theme.notrust_fg        = "#F00"
+
+return theme
+-- vim: et:sw=4:ts=8:sts=4:tw=80

@@ -1,0 +1,71 @@
+#
+# ncmpcpp config
+#
+
+mpd_music_dir = "~/Music"
+mpd_crossfade_time = "0"
+
+# Visualizer
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30"
+visualizer_in_stereo = "yes"
+#visualizer_type = "spectrum" #(spectrum/wave)
+visualizer_look = "─┃"
+#visualizer_look = "-@"
+#visualizer_look = "●▉"
+
+# Playlist
+now_playing_prefix = "$b"
+now_playing_suffix = "$/b"
+playlist_display_mode = "columns" (classic/columns)
+autocenter_mode = "no"
+centered_cursor = "no"
+cyclic_scrolling = "yes"
+mouse_list_scroll_whole_page = "no"
+
+
+
+song_list_format = "{$8$9}{[%l] >> }{%t }$R{%a - %b}"
+#song_list_format = "(6f)[cyan]{l} (40)[default]{t|f} (25)[red]{a} (30)[blue]{b}"
+
+#song_columns_list_format = "(6f)[cyan]{l} (40)[default]{t|f} (25)[red]{a} (30)[blue]{b}"
+song_columns_list_format = "(6f)[blue]{l} (25)[red]{a} (40)[green]{t|f} (30)[yellow]{b}"
+now_playing_prefix = "$b$5»$7»$1» "
+now_playing_suffix = "$/b"
+
+song_library_format = "{%n > }{%t}|{%f}"
+user_interface = "alternative"
+
+# Bars
+song_status_format = "$8%t $1- $2^a $1-{ $5%b $1-}$7%y$1" #{%a - }{%t - }{%b}"
+#progressbar_look = "|> "
+progressbar_look = "─╼ "
+titles_visibility = "no"
+header_visibility = "yes"
+statusbar_visibility = "no" 
+
+# Browser
+browser_playlist_prefix = "$2plist »$9 "
+browser_display_mode = "classic" (classic/columns)
+
+# Colors
+discard_colors_if_item_is_selected = "yes"
+header_window_color = "red"
+volume_color = "cyan"
+state_line_color = "green"
+state_flags_color = "red"
+main_window_color = "default"
+color1 = "default"
+color2 = "black"
+main_window_highlight_color = "red"
+progressbar_elapsed_color = "green"
+statusbar_color = "black"
+active_column_color = "red"
+visualizer_color = "cyan"
+
+# Others
+song_window_title_format = "MPD: {%a > }{%t}"
+search_engine_display_mode = "columns" (classic/columns)
+follow_now_playing_lyrics = "yes"
+fetch_lyrics_for_current_song_in_background = "yes"

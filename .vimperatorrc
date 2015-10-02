@@ -1,0 +1,6 @@
+colorscheme twily
+
+set maxitems=20
+set titlestring=
+
+nnoremap Q y:execute "!urxvtc -e '/home/emperor/bin/vimyt'"	

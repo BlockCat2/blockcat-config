@@ -1,0 +1,12 @@
+1431616861540	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1431616862528	Sync.Tracker.Clients	DEBUG	Saving changed IDs to clients
+1431616862534	Sync.Tracker.Greasemonkey	DEBUG	Saving changed IDs to greasemonkey
+1431617461543	Sync.Service	DEBUG	User-Agent: Firefox/37.0.2 FxSync/1.39.0.20150417180058.
+1431617461543	Sync.Service	INFO	Starting sync at 2015-05-14 11:31:01
+1431617461546	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1431617461547	Sync.Status	INFO	Resetting Status.
+1431617461547	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1431617461548	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1431617461555	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1431617461555	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1431617461556	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms.

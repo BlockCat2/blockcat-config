@@ -1,0 +1,18 @@
+music_directory "/home/exodus/Music/"
+playlist_directory "/home/exodus/.mpd/playlists"
+db_file "/home/exodus/.mpd/mpd.db"
+log_file "/home/exodus/.mpd/mpd.log"
+pid_file "/home/exodus/.mpd/mpd.pid"
+state_file "/home/exodus/.mpd/mpdstate"
+audio_output {
+    type "alsa"
+    name "salsa"
+    device "hw:0,0"
+    mixer_type "hardware"
+    mixer_device "default"
+    mixer_control "SoftMaster"
+}
+auto_output {
+    type "pulse"
+    name "pulser"
+}

@@ -1,0 +1,14 @@
+background no
+out_to_x no
+out_to_console yes
+update_interval 1
+total_run_times 0
+
+override_utf8_locale no
+TEXT
+${mpd_artist} - ${mpd_title} | \
+CPU: $cpu% |  \
+$mem/$memmax | \
+${execpi 3600 checkupdates | wc -l} | \
+${time %a %b %d} \
+${time %H:%M} \

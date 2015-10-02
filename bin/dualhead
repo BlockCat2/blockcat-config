@@ -1,0 +1,24 @@
+#!/bin/sh
+
+output=$2
+#if [ -z "$2" ]; then
+#    output="$2"
+#else
+#    output="VGA1"
+#fi
+
+case $1 in
+    left)
+        xrandr --output "$output" --primary --auto --output LVDS-0 --auto --right-of "$output";;
+    right)
+        xrandr --output "$output" --primary --auto --output LVDS-0 --auto --left-of "$output";;
+    dup)
+        xrandr --output "$output" --same-as LVDS-0 --output LVDS-0 --primary;;
+    screen)
+        xrandr --output "$output" --primary --auto --output LVDS-0 --off;;
+    laptop)
+        xrandr --output LVDS-0 --primary --auto --output $output --off;;
+    list)
+        xrandr | grep '\<connected\>' | cut -d\   -f1;;
+    *) echo `basename $0` '{left|right|dup|screen|laptop|list} {output screen}';;
+esac

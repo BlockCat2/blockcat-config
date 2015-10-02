@@ -1,0 +1,33 @@
+show-keymap-hint  false
+swap-title-and-hints false
+browser "/usr/bin/firefox"
+external-url-viewer "/usr/bin/urlview"
+pager internal
+html-renderer "/usr/bin/links2 -dump"
+
+bind-key j next
+bind-key k prev
+bind-key J next-feed
+bind-key K prev-feed
+bind-key j down article
+bind-key k up article
+bind-key J next article
+bind-key K prev article
+
+auto-reload yes
+reload-time 15
+
+macro y set browser "mpv --vo=xv -fps 60 %u"; open-in-browser ; set browser "luakit %u"
+
+color background magenta color237
+
+color article color118 color237
+
+color listnormal color118 color237
+
+color listfocus color108 color236 standout
+
+color info color144 color234 
+# default standout
+
+feed-sort-order name

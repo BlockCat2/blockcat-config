@@ -1,0 +1,183 @@
+# fonts
+
+# font for window titles. ISO 10646 = Unicode
+
+
+#font -video-fixed-medium-r-normal--13-120-75-C-70-iso10646-1
+#font pango:cure 8
+font pango:FontAwesome 8.3
+#font pango: DejaVu Sans 7
+floating_modifier Mod4
+
+
+# colors
+set $orange #37aacf
+set $bgnorm #c0c0c0
+set $fgnorm #c0c0c0
+set $bfoc #7f7f7f
+set $bgunf #303030
+set $bunf #333333
+set $green #333333
+
+#class                   border        backgr      text
+client.focused           #d64937 #d64937     #1f1f1f
+client.focused_inactive  #545454       #2d2d2d     #d9d9d9
+client.unfocused         #545454       #2d2d2d     #d9d9d9
+client.urgent            #51c4d4       #ecedee     #51c4d4
+
+focus_follows_mouse no
+
+# keybinds
+
+# start a terminal
+bindsym Mod4+Return exec urxvtc
+# kill focused window
+bindsym Mod4+q kill
+# start dmenu
+
+#bindsym Mod4+p exec i3-dmenu-desktop --dmenu='dmenu -nb "#101010" -nf "#999999" -sb "#191919" -sf "#cef318" -b'
+bindsym Mod4+d exec rofi -show run
+bindsym Mod4+p exec rofi -show run -font "inconsolate 9" -fg "#ecedee" -bg "#121212" -hlfg "#95C7AE" -hlbg "#000000" -o 100 
+
+# change focus
+bindsym Mod4+h focus left
+bindsym Mod4+j focus down
+bindsym Mod4+k focus up
+bindsym Mod4+l focus right
+
+# move focused window
+bindsym Mod4+Shift+h move left
+bindsym Mod4+Shift+j move down
+bindsym Mod4+Shift+k move up
+bindsym Mod4+Shift+l move right
+
+# split in horizontal orientation
+bindsym Mod4+b split h
+# split in vertical orientation
+bindsym Mod4+v split v
+
+# enter fullscreen mode for the focused container
+bindsym Mod4+f fullscreen
+
+# change container layout (stacked, tabbed, default)
+bindsym Mod4+s layout stacking
+bindsym Mod4+w layout tabbed
+bindsym Mod4+e layout default
+
+# toggle tiling / floating
+bindsym Mod4+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym Mod4+space focus mode_toggle
+
+# focus the parent container
+bindsym Mod4+a focus parent
+
+# switch to workspace
+bindsym Mod4+1 workspace 1: Home
+bindsym Mod4+2 workspace 2: Wired
+bindsym Mod4+3 workspace 3: IRC
+bindsym Mod4+4 workspace 4: Music
+bindsym Mod4+5 workspace 5: Videos
+bindsym Mod4+6 workspace 6: Prog
+bindsym Mod4+7 workspace 7 
+bindsym Mod4+8 workspace 8
+bindsym Mod4+9 workspace 9
+bindsym Mod4+0 workspace 10
+
+# move focused container to workspace
+bindsym Mod4+Shift+1 move workspace 1: Home
+bindsym Mod4+Shift+2 move workspace 2: Wired
+bindsym Mod4+Shift+3 move workspace 3: IRC
+bindsym Mod4+Shift+4 move workspace 4: Music
+bindsym Mod4+Shift+5 move workspace 5: Videos
+bindsym Mod4+Shift+6 move workspace 6: Prog
+bindsym Mod4+Shift+7 move workspace 7
+bindsym Mod4+Shift+8 move workspace 8
+bindsym Mod4+Shift+9 move workspace 9
+bindsym Mod4+Shift+0 move workspace 10
+
+# reload the config file
+bindsym Mod4+Shift+c reload
+# restart i3 inplace (preservers your layout/session, can be used to upgrade i3)
+bindsym Mod4+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym Mod4+Shift+q exit
+# logout menu
+bindsym Mod4+Shift+e exec --no-startup-id "logout-menu"
+mode "resize" {
+	bindsym l resize shrink width 10px or 10 ppt
+	bindsym k resize grow height 10px or 10 ppt
+	bindsym j resize shrink height 10px or 10 ppt
+	bindsym h resize grow width 10px or 10 ppt
+	
+  bindsym Right resize shrink width 10px or 10 ppt
+	bindsym Up resize grow height 10px or 10 ppt
+	bindsym Down resize shrink height 10px or 10 ppt
+	bindsym Left resize grow width 10px or 10 ppt
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+bindsym Mod4+r mode "resize"
+
+bindsym Mod1+Shift+r exec screencast
+bindsym Mod1+Shift+s exec "pkill -f 'x11grab'"
+
+bindsym 0xff61 exec "import -window root ~/Pictures/$(date '+%Y%m%d-%H%M%S').png"
+
+bindsym Mod4+XF86AudioPlay exec mpc play
+bindsym Mod4+Shift+XF86AudioPlay exec mpc pause
+bindsym Mod4+XF86AudioStop exec mpc stop
+bindsym Mod4+XF86AudioNext exec mpc next
+bindsym Mod4+XF86AudioPrev exec mpc prev
+
+gaps inner 12
+gaps outer 12
+
+bar {
+  status_command i3blocks
+# status_command conky -c $HOME/.conkyrc
+	mode dock
+	position bottom
+	font pango:dejavu sans 8
+	strip_workspace_numbers yes
+	colors {
+		background #454545
+		statusline #ffffff
+		separator #51c4d4
+
+		focused_workspace #d64937 #d64937 #ffffff
+		active_workspace  #d64937 #d64937 #ffffff
+		inactive_workspace #454545 #454545 #ffffff
+		urgent_workspace #454545 #454545 #ffffff
+	}
+}
+
+workspace_auto_back_and_forth yes
+
+assign [class="luakit"] 2: Wired
+assign [class="^irefox$"] 2: Wired
+assign [class="^qute$"] 2: Wired
+assign [class="^^uTox&"] 3: IRC
+assign [class="mpv"] 5: Videos
+assign [class="mplayer"] 5: Videos
+assign [class="^vlc&"] 5: Videos
+assign [class="^macs&"] 6: Prog
+
+for_window [class="feh"] border pixel 0
+for_window [class="Firefox"] border pixel 0
+for_window [class="^.*"] border pixel 1
+for_window [class="mpv"] border pixel 0
+for_window [class="URxvt"] border pixel 0
+
+
+# autorun shit
+exec --no-startup-id 'pkill xfce4-notifyd'
+exec --no-startup-id 'urxvtd'
+exec --no-startup-id 'redshift'
+exec --no-startup-id 'keys'
+exec --no-startup-id 'Musicupdate'
+exec --no-startup-id 'dunst'
+exec --no-startup-id 'nm-applet'
+exec --no-startup-id 'emacs --daemon'
